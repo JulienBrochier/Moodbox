@@ -1,0 +1,29 @@
+#palette 
+{
+    display:flex;
+    flex-wrap: wrap;
+    width : 30%;
+    height : 500px;
+    border: 2px solid black;
+}
+
+.element
+{
+    width : 50px;
+    height:50px;
+    margin:auto;
+}
+
+.element:nth-child(1)
+{
+    background-color: aqua
+}
+
+.element:nth-child(2)
+{
+    background-color: black
+}
+.element:nth-child(3)
+{
+    background-color: red;
+}

@@ -15,6 +15,37 @@
         <link href="../bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="../bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap-theme.css" rel="stylesheet">
 
+        <link href="../CSS/style.css" rel="stylesheet"> 
+
+
     </head>
 
+    <body>
+        <div id="palette">
+
+            <div class="element" id="1" onclick="myFunction('1','blue')">
+                    
+            </div>
+            <div class="element" id="2" onclick="myFunction('2','red')">
+                
+            </div>
+            <div class="element">
+                
+            </div>
+        </div>
+
+        
+
+        <script >
+                function myFunction(I,color) 
+                {
+                document.getElementById(I).style.backgroundColor = color;
+                }
+                
+        </script>
+    </body>
+
+
+
 </html>
+
