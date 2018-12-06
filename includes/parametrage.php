@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 
     <head>
@@ -39,14 +40,19 @@
                 function ColorButton(I,color) 
                 {
                 //document.getElementById(I).style.backgroundColor = color;
-                //  ../model
+                
+                <?php php_func(); ?>
+
                 } 
         </script>
 
+        <?php
+            function php_func()
+            {
+                // execute code;
+            }
+        ?>
+
+
         
     </body>
-
-
-
-</html>
-
