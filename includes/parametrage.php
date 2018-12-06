@@ -42,14 +42,14 @@
                 //document.getElementById(I).style.backgroundColor = color;
                 
                 <?php php_func(); ?>
-
+                // appeler la page color.php grâce à Ajax
                 } 
         </script>
 
         <?php
             function php_func()
             {
-                // execute code;
+                echo"Test";
             }
         ?>
 
