@@ -10,10 +10,10 @@
         <title>Moodbox</title>
 
         <!-- Bootstrap core CSS -->
-        <link href="../bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-        <link href="../bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.css" rel="stylesheet">
-        <link href="../bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="../bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap-theme.css" rel="stylesheet">
+        <link href="../imports/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="../imports/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.css" rel="stylesheet">
+        <link href="../imports/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../imports/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap-theme.css" rel="stylesheet">
 
         <link href="../CSS/style.css" rel="stylesheet"> 
 

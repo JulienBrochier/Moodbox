@@ -27,3 +27,15 @@
 {
     background-color: red;
 }
+
+.zone
+{
+    background-color: grey;
+}
+
+.titre_zone
+{
+    color : blue;
+    background-color: white;
+    border-radius: 10px;
+}
