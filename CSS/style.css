@@ -1,32 +1,397 @@
+@font-face { /* Permet d'importer une police */
+    font-family: 'BEBAS';
+    src: url('bebasneue-regular-webfont.woff2') format('woff2'),
+         url('bebasneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body
+{
+    background-image: url("/includes/image/fond.jpg"); /* Image d'arrière plan */
+    background-repeat: repeat; /* Façon de répéter le background */
+    background-attachment: scroll; /* Défile ou non*/
+
+}
+p
+{
+    font-family: 'BEBAS';
+}
 #palette 
 {
     display:flex;
-    flex-wrap: wrap;
-    width : 30%;
-    height : 500px;
+    flex-direction: column;
+    justify-content: flex-start;
+    width : 95%;
+    height : 200px;
+    /* border: 2px solid #000000; */
+    margin : auto;
+    
+
+
+}
+#telecommande
+{
+    display : flex;
+    flex-direction: column;
+    width : 100%;
+    height: 100%;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    background-image: url('../includes/image/alo.jpg'); 
+    box-shadow: 10px 5px 5px lightgrey;
+
+}
+#on
+{
+    display: flex;
+    width: 10%;
+    height : 50px;
+    margin : auto;
+    /* border: 2px solid #000000; */
+}
+#onoff
+{
+    margin : auto;
+}
+#palettedegrade
+{
+    display: flex;
+    width: 90%;
+    height : 50px;
+    margin : auto;
+    /* border: 2px solid #000000; */
+}
+#degrade
+{
+    width : 100% ;
+    height: 40px;
+    margin : auto;
     border: 2px solid black;
+
+}
+#saturation
+{
+    display : flex;
+    flex-direction: column;
+    
+    width : 90%;
+    height : 80px;
+    margin : auto;
+    /* border: 2px solid #000000; */
+}
+#psaturation
+{
+    margin: auto;
+    color : white;
+
+
+}
+#divsaturation
+{
+
+    display:flex;
+    border: 2px solid black;
+    height : 40px;
+}
+#imgsaturation
+{
+    margin : auto;
+
+    width : 100%;
+    height :100%;
+    
+}
+#luminosite
+{
+    display :flex;
+    flex-direction :  column;
+    width: 100%;
+    height: 80px;
+    /* border: 2px solid black; */
+    margin : auto;
+}
+#pluminosite
+{
+    margin : auto;
+    color : white;
+}
+#divcercle
+{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+#controleluminosite
+{
+    margin :auto;
+    display : flex;
+    flex-direction: row;
+
+    border: 2px solid black;
+    width: 90%;
+    height: 40px;
+    background-color:beige;
+    border-radius: 30px;
 }
 
-.element
+#moins
+{
+    display :flex;
+    margin : auto;
+}
+#Plus
+{
+    display: flex;
+    margin: auto;
+
+
+}
+.cercle
+{
+    width : 10px;
+    height:10px;
+    border-radius:50%;
+    margin:auto;
+    border: 1px solid black;
+}
+.cercle:nth-child(1)
+{
+    background-color: grey;
+}
+
+.cercle:nth-child(2)
+{
+    background-color: grey;
+}
+.cercle:nth-child(3)
+{
+    background-color: grey;
+}
+.cerlce:nth-child(4)
+{
+    background-color: white;
+}
+
+.clercle:nth-child(5)
+{
+    background-color: white;
+}
+#mode
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    height: 150px;
+}
+#typemode
+{
+    width: 90%;
+    height: 70%;
+    display : flex;
+    flex-direction: row;
+    margin : auto;
+    justify-content: space-around;
+
+}
+#uni
+{
+    display : flex;
+
+    background-color : lightslategray;
+    width : 80px;
+    height: 80px;
+    margin: auto;
+    border-radius: 30px;
+} 
+#puni
+{
+    text-align: center;
+    color : white;
+}
+#pmulti
+{
+    text-align: center;
+    color : white;
+}
+#pcligno
+{
+    text-align: center;
+    color : white;
+}
+#pmode
+{
+    margin: auto;
+    color : white;
+
+}
+#cligno
+{
+    display : flex;
+    background-color : lightslategray;
+    width : 80px;
+    height: 80px;
+    margin: auto;
+    border-radius: 30px;
+}      
+#multi
+{
+    display : flex;
+    background-color : lightslategray;
+    width : 80px;
+    height: 80px;
+    margin: auto;
+    border-radius: 30px;
+}  
+.imgMode
+{
+    margin:auto;
+
+    width: 70%;
+    height: 70%;
+
+}
+#ligne1
+{
+    display:flex;
+
+    margin : auto;
+    /* border: 2px solid black; */
+    width : 90%;
+    height : 55px;
+}
+.element1
 {
     width : 50px;
     height:50px;
     margin:auto;
+    border: 1px solid black;
+    border-radius:20px;
+    box-shadow: 5px 3px 3px grey;
 }
 
-.element:nth-child(1)
+.element1:nth-child(1)
 {
-    background-color: aqua
+    background-color: #000000;	
 }
 
-.element:nth-child(2)
+.element1:nth-child(2)
 {
-    background-color: black
+    background-color: #FFFFFF
 }
-.element:nth-child(3)
+.element1:nth-child(3)
 {
     background-color: red;
 }
+.element1:nth-child(4)
+{
+    background-color: #00FF00;
+}
+
+.element1:nth-child(5)
+{
+    background-color: 	#0000FF;
+}
+.element1:nth-child(6)
+{
+    background-color: 	#FFFF00;
+}
+
+#ligne2
+{
+    display:flex;
+    flex-wrap: wrap;
+    margin : auto;
+    /* border: 2px solid black; */
+    width : 90%;
+    height : 55px;
+}
+.element2
+{
+    width : 50px;
+    height:50px;
+    margin:auto;
+    border: 1px solid black;
+    border-radius:20px;
+    box-shadow: 5px 3px 3px grey;
+}
+
+.element2:nth-child(1)
+{
+    background-color: #00FFFF
+}
+
+.element2:nth-child(2)
+{
+    background-color: #FF00FF
+}
+.element2:nth-child(3)
+{
+    background-color: #C0C0C0;
+}
+.element2:nth-child(4)
+{
+    background-color: 	#008000;
+}
+
+.element2:nth-child(5)
+{
+    background-color:#800080;
+}
+.element2:nth-child(6)
+{
+    background-color:#008080;
+}
+
+#ligne3
+{
+    display:flex;
+    flex-wrap: wrap;
+    margin : auto;
+    /* border: 2px solid black; */
+    width : 90%;
+    height : 55px;
+}
+.element3
+{
+    width : 50px;
+    height:50px;
+    margin:auto;
+    border: 1px solid black;
+    border-radius:20px;
+    box-shadow: 5px 3px 3px grey;
+}
+
+.element3:nth-child(1)
+{
+    background-color: white
+}
+
+.element3:nth-child(2)
+{
+    background-color: white
+}
+.element3:nth-child(3)
+{
+    background-color: white;
+}
+.element3:nth-child(4)
+{
+    background-color: white
+}
+
+.element3:nth-child(5)
+{
+    background-color: white
+}
+.element3:nth-child(6)
+{
+    background-color: white;
+}
+
+
+
+
 
 .zone
 {
@@ -38,4 +403,205 @@
     color : blue;
     background-color: white;
     border-radius: 10px;
+}
+.styled {
+    border: 0;
+    line-height: 2.5;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+
+    background-image: url('../includes/image/alo.jpg');
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: lightgrey;
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+.styled2 {
+    border: 0;
+    line-height: 1;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+
+    background-image: url('../includes/image/alo.jpg');
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled2:hover {
+    background-color: lightgrey;
+}
+
+.styled2:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+#creer_ambiance
+{
+    display: flex;
+    margin:auto;
+}
+#partie_gauche
+{
+    height: 100%;
+    width: 29%;
+    display : flex;
+    flex-direction: column;
+    margin: left;
+}
+#partie_centre
+{
+    height: 100%;
+    width: 30%;
+    display : flex;
+    flex-direction : column;
+    margin:center;
+    
+}
+#logo
+{
+    margin: auto;
+    border: 2px solid #000000;
+    box-shadow: 10px 5px 5px lightgrey;
+}
+#ambiance_base
+{
+    display: flex;
+    flex-direction: column;
+    width : 100%;
+    border: 2px solid #000000;
+    background-image: url('../includes/image/alo.jpg');
+    height: 30%;
+    border-radius: 30px;
+    margin:auto;
+    justify-content: space-around;
+    box-shadow: 10px 5px 5px lightgrey;
+}
+#pambiance
+{
+    margin:auto;
+    color: white;
+    font-size: 2rem;
+}
+#ligne_1
+{
+    margin: auto;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.divambiance
+{
+    display : flex;
+    background-color : lightslategray;
+    width : 80px;
+    height: 80px;
+    margin: auto;
+    border-radius: 30px;
+}
+.imgambiance
+{
+    display: flex;
+    margin: auto;
+}
+#ambiance_perso
+{
+    display: flex;
+    flex-direction: column;
+    width : 100%;
+    border: 2px solid #000000;
+    background-image: url('../includes/image/alo.jpg');
+    height: 30%;
+    border-radius: 30px;
+    margin:auto;
+    justify-content: space-around;
+    box-shadow: 10px 5px 5px lightgrey;
+}
+#pambiance_perso
+{
+    margin:auto;
+    color: white;
+    font-size: 2rem;
+}
+#menu_deroulant
+{
+    display: flex;
+    flex-direction : column;
+    margin:auto;
+    height: 65%;
+    width: 100%;
+}
+#ligne_2
+{
+    margin: auto;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+#clic_ambiance
+{
+    margin:auto;
+    display: flex;
+    width: 150px;
+    height: 50px;
+
+    
+}
+#partie_droite
+{
+    height: 100%;
+    width: 29%;
+
+    display : flex;
+    flex-direction : column;
+    margin:center;
+}
+#page
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#programmation
+{
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width : 100%;
+    height: 80%;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    background-image: url('../includes/image/alo.jpg'); 
+    box-shadow: 10px 5px 5px lightgrey;
+
+}
+#pprogra
+{
+    color : white;
+    text-align : center;
+    font-size: 2rem;
+}
+.planif_ambiance
+{
+    height : 10%;
 }

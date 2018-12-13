@@ -20,28 +20,193 @@
     </head>
 
     <body>
-        <div id="palette">
+        <div id = "page">
+        <div id = "partie_gauche">
+        <div id ="telecommande">
+            <div id = "on"> <img src ="image/power.png" title = "On" alt = "On/Off" id = "onoff"></div>
+            <div id="palette">
+                <div id="ligne1">
 
-            <div class="element" id="1" onclick="ColorButton('1','blue')">
-                    
+                    <div class="element1">      
+                    </div>
+                    <div class="element1">
+                    </div>
+                    <div class="element1">
+                    </div>
+                    <div class="element1">  
+                    </div>
+                    <div class="element1">
+                    </div>
+                    <div class="element1">
+                    </div>
+                </div>
+                <div id="ligne2">
+
+                        <div class="element2">      
+                        </div>
+                        <div class="element2">
+                        </div>
+                        <div class="element2">
+                        </div>
+                        <div class="element2">  
+                        </div>
+                        <div class="element2">
+                        </div>
+                        <div class="element2">
+                        </div>
+                    </div>
+                <div id="ligne3">
+
+                            <div class="element3">      
+                            </div>
+                            <div class="element3">
+                            </div>
+                            <div class="element3">
+                            </div>
+                            <div class="element3">  
+                            </div>
+                            <div class="element3">
+                            </div>
+                            <div class="element3">
+                            </div>
+                </div>    
             </div>
-            <div class="element" id="2" onclick="ColorButton('2','red')">
+            <div id = "palettedegrade"> <img src ="image/degrade.png" title = "degrade" alt = "degrade" id = "degrade"></div>
+            <div id = "saturation">
+                <p id="psaturation">SATURATION</p>
+                <div id = "divsaturation"><img src ="image/saturation.png" title = "Saturation" alt = "Saturation" id = "imgsaturation"></div>
                 
             </div>
-            <div class="element">
-                
+            <div id = "luminosite">
+                    <p id="pluminosite">LUMINOSITE</p>
+                    <div id = "controleluminosite">
+                            <img src ="image/substract.png" title = "Moins" alt = "Moins" id = "Moins">
+                            
+                            <div id = "divcercle">
+                                <div class="cercle"></div>
+                                <div class="cercle"></div>    
+                                <div class="cercle"></div>    
+                                <div class="cercle"></div>    
+                                <div class="cercle"></div>        
+                            </div>
+                            <img src ="image/add.png" title = "Plus" alt = "Plus" id = "plus">
+                            
+                    </div>    
+            </div>
+            <div id = "mode">
+                <p id = "pmode">MODE</p>
+                <div id="typemode">
+                    <div>
+                        <div id="uni"></div>
+                        <p id = "puni">Uni</p>
+                    </div>
+                    <div>
+                        <div id="cligno"><img src = "image/flash.png" class = "imgMode" title ="Clignotant" alt = "Clignotant"></div>
+                        <p id ="pcligno">Stroboscope</p>
+                    </div>
+                    <div>
+                        <div id="multi"><img src = "image/rgb.png" class = "imgMode " title ="Multicouleur" alt = "Multicouleur"></div>
+                        <p id = "pmulti">Multi-couleur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+       
+        <div id = "partie_centre">
+            <div id = "logo">
+                <img src = "image/logo.png" title ="Logo" alt = "Logo">
+            </div>
+            <div id = "ambiance_base">
+                <p id = "pambiance">AMBIANCE DE BASE</p>
+                <div id = "ligne_1">
+                    <div class = "divambiance"><img class = "imgambiance" src = "image/sunset.png" title ="Logo" alt = "Logo"></div>
+                    <div class = "divambiance"><img class = "imgambiance" src = "image/meditation.png" title ="Logo" alt = "Logo"></div>
+                    <div class = "divambiance"><img class = "imgambiance" src = "image/creativity.png" title ="Logo" alt = "Logo"></div>
+                </div>
+                <div id = "ligne_1">
+                    <div class = "divambiance"><img class = "imgambiance" src = "image/open-book.png" title ="Logo" alt = "Logo"></div>
+                    <div class = "divambiance"><img class = "imgambiance" src = "image/moon.png" title ="Logo" alt = "Logo"></div>
+                    <div class = "divambiance"><img class = "imgambiance" src = "image/popcorn.png" title ="Logo" alt = "Logo"></div>
+                </div>
+            </div>
+            <div id = "ambiance_perso">
+                    <p id = "pambiance_perso">AMBIANCES CREES</p>
+                    <div id = "menu_deroulant">
+                    <div id = "ligne_2">
+                            <div id = "clic_ambiance"> 
+                                    <button class="favorite styled2"
+                                    type="button">
+                                   
+                                    </button></div>
+                            <div id = "clic_ambiance">
+                                    <button class="favorite styled2"
+                                    type="button">
+                                    
+                                    </button></div>
+                            <div id = "clic_ambiance">
+                                    <button class="favorite styled2"
+                                    type="button">
+                                    
+                                    </button></div>
+                        
+                    </div>
+                    <div id = "ligne_2">
+                            <div id = "clic_ambiance">
+                                    <button class="favorite styled2"
+                                    type="button">
+                                    
+                                    </button></div>
+                            <div id = "clic_ambiance">
+                                    <button class="favorite styled2"
+                                    type="button">
+                                    
+                                    </button></div>
+                            <div id = "clic_ambiance">
+                                    <button class="favorite styled2"
+                                    type="button">
+                                   
+                                    </button></div>
+                    </div>
+                    <div id = "ligne_2">
+                            <div id = "clic_ambiance">
+                                    <button class="favorite styled2"
+                                    type="button">
+                                   
+                                    </button></div>
+                            <div id = "clic_ambiance">
+                                    <button class="favorite styled2"
+                                    type="button">
+                                    
+                                    </button></div>
+                            <div id = "clic_ambiance">
+                                    <button class="favorite styled2"
+                                    type="button">
+                                   
+                                    </button></div>
+                    </div>
+                    </div>
             </div>
         </div>
 
         
 
-        <script type="text/javascript">
-                function ColorButton(I,color) 
-                {
-                //document.getElementById(I).style.backgroundColor = color;
-                //  ../model
-                } 
-        </script>
+        <div id = "partie_droite">
+            <div id ="programmation">
+                <p id = "pprogra">PROGRAMMATION</p>
+            </div>
+                <div id = "planif_ambiance"><button class="favorite styled"
+                    type="button">Planifier une ambiance</button></div>
+                    <div id = "planif_ambiance"><button class="favorite styled"
+                        type="button">Créer une ambiance</button></div>
+            
+
+        </div>
+        </div>
+
+        
+
 
         
     </body>

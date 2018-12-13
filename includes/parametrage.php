@@ -23,10 +23,16 @@
     <body>
         <div id="palette">
 
-            <div class="element" id="1" onclick="ColorButton('1','blue')">
+            <div class="element">      
+            </div>
+            <div class="element">
+            </div>
+            <div class="element">
+            </div>
+            <div class="element">
                     
             </div>
-            <div class="element" id="2" onclick="ColorButton('2','red')">
+            <div class="element">
                 
             </div>
             <div class="element">
