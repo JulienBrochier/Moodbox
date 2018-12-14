@@ -390,20 +390,33 @@ p
 }
 
 
-
-
-
-.zone
+.white_background
 {
-    background-color: grey;
+    background-color: white;
+}
+
+.black
+{
+    color: black;
 }
 
 .titre_zone
 {
-    color : blue;
+    margin-top: 2%;
+
+    color : grey;
+
     background-color: white;
     border-radius: 10px;
+    text-align: center;
+    font-size: 200%;
 }
+
+.arrondi
+{
+    border-radius: 10px;
+}
+
 .styled {
     border: 0;
     line-height: 2.5;
@@ -480,6 +493,21 @@ p
     border: 2px solid #000000;
     box-shadow: 10px 5px 5px lightgrey;
 }
+
+.logoTitre
+{
+    margin: auto;
+    border: 2px solid #000000;
+    box-shadow: 10px 5px 5px lightgrey;
+    width: 35%;
+}
+
+.espace
+{
+    margin-top: 1%;
+    height: 22%;
+}
+
 #ambiance_base
 {
     display: flex;
