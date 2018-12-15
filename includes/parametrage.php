@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="fr">
 
     <head>
@@ -10,10 +9,10 @@
         <title>Moodbox</title>
 
         <!-- Bootstrap core CSS -->
-        <link href="../imports/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-        <link href="../imports/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.css" rel="stylesheet">
-        <link href="../imports/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="../imports/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap-theme.css" rel="stylesheet">
+        <link href="../bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="../bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.css" rel="stylesheet">
+        <link href="../bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap-theme.css" rel="stylesheet">
 
         <link href="../CSS/style.css" rel="stylesheet"> 
 
@@ -21,24 +20,174 @@
     </head>
 
     <body>
-        <div id="palette">
+    <form action="parametrage.php" method="get">
+        <div id = "page">
+        <div id = "partie_gauche">
+        <div id ="telecommande">
+            <div id = "on"> <img src ="image/power.png" title = "On" alt = "On/Off" id = "onoff"></div>
+            <div id="palette">
+                    <?php 
 
-            <div class="element">      
-            </div>
-            <div class="element">
-            </div>
-            <div class="element">
-            </div>
-            <div class="element">
-                    
-            </div>
-            <div class="element">
+                    $array_color = array("black","white","red","green","blue","yellow",
+                                        "cyan","rose","grey","dark_green","purple","ocean");
+                        for ($i = 1; $i<=2; $i++)
+                            {echo("<div id='ligne$i'> ");
+                                
+                                for($j = 1; $j <= 6; $j++)
+                                    {
+                                        $index = ($i-1)*6 + $j -1;
+                                        echo("<input type='button' value='$array_color[$index]' name='$array_color[$index]' class='element$i'>");  
+                                        //input type='button' value='Click Me!'    
+                                    }
+                            echo("</div>");
+                            }
+                    ?>
                 
             </div>
-            <div class="element">
+            <div id = "palettedegrade"> <img src ="image/degrade.png" title = "degrade" alt = "degrade" id = "degrade"></div>
+            <div id = "saturation">
+                <p id="psaturation">SATURATION</p>
+                <div id = "divsaturation"><img src ="image/saturation.png" title = "Saturation" alt = "Saturation" id = "imgsaturation"></div>
                 
+            </div>
+            <div id = "luminosite">
+                    <p id="pluminosite">LUMINOSITE</p>
+                    <div id = "controleluminosite">
+                            <img src ="image/substract.png" title = "Moins" alt = "Moins" id = "Moins">
+                            
+                            <div id = "divcercle">
+                                <div class="cercle"></div>
+                                <div class="cercle"></div>    
+                                <div class="cercle"></div>    
+                                <div class="cercle"></div>    
+                                <div class="cercle"></div>        
+                            </div>
+                            <img src ="image/add.png" title = "Plus" alt = "Plus" id = "plus">
+                            
+                    </div>    
+            </div>
+            <div id = "mode">
+                <p id = "pmode">MODE</p>
+                <div id="typemode">
+                    <div>
+                        <div id="uni"></div>
+                        <p id = "puni">Uni</p>
+                    </div>
+                    <div>
+                        <div id="cligno"><img src = "image/flash.png" class = "imgMode" title ="Clignotant" alt = "Clignotant"></div>
+                        <p id ="pcligno">Stroboscope</p>
+                    </div>
+                    <div>
+                        <div id="multi"><img src = "image/rgb.png" class = "imgMode " title ="Multicouleur" alt = "Multicouleur"></div>
+                        <p id = "pmulti">Multi-couleur</p>
+                    </div>
+                </div>
             </div>
         </div>
+        </div>
+
+       
+        <div id = "partie_centre">
+            <div id = "logo">
+                <img src = "image/logo.png" title ="Logo" alt = "Logo">
+            </div>
+            <div id = "ambiance_base">
+                <p id = "pambiance">AMBIANCE DE BASE</p>
+                <div id = "ligne_1">
+                    <div class = "divambiance"><img class = "imgambiance" src = "image/sunset.png" title ="Logo" alt = "Logo"></div>
+                    <div class = "divambiance"><img class = "imgambiance" src = "image/meditation.png" title ="Logo" alt = "Logo"></div>
+                    <div class = "divambiance"><img class = "imgambiance" src = "image/creativity.png" title ="Logo" alt = "Logo"></div>
+                </div>
+                <div id = "ligne_1">
+                    <div class = "divambiance"><img class = "imgambiance" src = "image/open-book.png" title ="Logo" alt = "Logo"></div>
+                    <div class = "divambiance"><img class = "imgambiance" src = "image/moon.png" title ="Logo" alt = "Logo"></div>
+                    <div class = "divambiance"><img class = "imgambiance" src = "image/popcorn.png" title ="Logo" alt = "Logo"></div>
+                </div>
+            </div>
+            <div id = "ambiance_perso">
+                    <p id = "pambiance_perso">AMBIANCES CREES</p>
+                    <div id = "menu_deroulant">
+                    <div id = "ligne_2">
+                            <div id = "clic_ambiance"> 
+                                    <button class="favorite styled2"
+                                    type="button">
+                                   
+                                    </button></div>
+                            <div id = "clic_ambiance">
+                                    <button class="favorite styled2"
+                                    type="button">
+                                    
+                                    </button></div>
+                            <div id = "clic_ambiance">
+                                    <button class="favorite styled2"
+                                    type="button">
+                                    
+                                    </button></div>
+                        
+                    </div>
+                    <div id = "ligne_2">
+                            <div id = "clic_ambiance">
+                                    <button class="favorite styled2"
+                                    type="button">
+                                    
+                                    </button></div>
+                            <div id = "clic_ambiance">
+                                    <button class="favorite styled2"
+                                    type="button">
+                                    
+                                    </button></div>
+                            <div id = "clic_ambiance">
+                                    <button class="favorite styled2"
+                                    type="button">
+                                   
+                                    </button></div>
+                    </div>
+                    <div id = "ligne_2">
+                            <div id = "clic_ambiance">
+                                    <button class="favorite styled2"
+                                    type="button">
+                                   
+                                    </button></div>
+                            <div id = "clic_ambiance">
+                                    <button class="favorite styled2"
+                                    type="button">
+                                    
+                                    </button></div>
+                            <div id = "clic_ambiance">
+                                    <button class="favorite styled2"
+                                    type="button">
+                                   
+                                    </button></div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+
+        
+
+        <div id = "partie_droite">
+            <div id ="programmation">
+                <p id = "pprogra">PROGRAMMATION</p>
+            </div>
+                <div id = "planif_ambiance"><a href="plannification.php"><button class="favorite styled" 
+                    type="button">Planifier une ambiance</button></a></div>
+                    <div id = "planif_ambiance"><button class="favorite styled"
+                        type="button">Créer une ambiance</button></div>
+            
+
+        </div>
+        </div>
+
+        </form>
+
+
+        
+    </body>
+
+
+
+</html>
+
 
         
 
@@ -59,6 +208,3 @@
             }
         ?>
 
-
-        
-    </body>
