@@ -24,7 +24,7 @@
         <div id = "page">
         <div id = "partie_gauche">
         <div id ="telecommande">
-            <div id = "on"> <img src ="image/power.png" title = "On" alt = "On/Off" id = "onoff"></div>
+            <div id = "on"> <input type='image' src ="image/power.png" title = "On" alt = "On/Off" id = "onoff"></div>
             <div id="palette">
                     <?php 
 
@@ -93,16 +93,27 @@
             </div>
             <div id = "ambiance_base">
                 <p id = "pambiance">AMBIANCE DE BASE</p>
-                <div id = "ligne_1">
-                    <div class = "divambiance"><img class = "imgambiance" src = "image/sunset.png" title ="Logo" alt = "Logo"></div>
-                    <div class = "divambiance"><img class = "imgambiance" src = "image/meditation.png" title ="Logo" alt = "Logo"></div>
-                    <div class = "divambiance"><img class = "imgambiance" src = "image/creativity.png" title ="Logo" alt = "Logo"></div>
-                </div>
-                <div id = "ligne_1">
-                    <div class = "divambiance"><img class = "imgambiance" src = "image/open-book.png" title ="Logo" alt = "Logo"></div>
-                    <div class = "divambiance"><img class = "imgambiance" src = "image/moon.png" title ="Logo" alt = "Logo"></div>
-                    <div class = "divambiance"><img class = "imgambiance" src = "image/popcorn.png" title ="Logo" alt = "Logo"></div>
-                </div>
+
+            <?php 
+
+            $array_ambiancesMood = array("sunset","meditation","creativity",
+                                "reading","moon","movie");
+
+                for ($i = 0; $i<=1; $i++)
+                    {echo("<div id='ligne1'> ");
+                        
+                        for($j = 0; $j <= 2; $j++)
+                            {
+                                $index = $i*3 + $j;
+                                echo("<div class = 'divambiance'><input type='image' class = 'imgambiance' 
+                                    src = 'image/$array_ambiancesMood[$index].png' name ='$array_ambiancesMood[$index]' 
+                                    title ='$array_ambiancesMood[$index]' alt = '$array_ambiancesMood[$index]'></div>");  
+                                //input type='button' value='Click Me!'    
+                            }
+                    echo("</div>");
+                    }
+            ?>
+                
             </div>
             <div id = "ambiance_perso">
                     <p id = "pambiance_perso">AMBIANCES CREES</p>
