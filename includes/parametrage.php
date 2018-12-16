@@ -37,8 +37,8 @@
 	}
 	if (isset($_POST['cyan']))
 	{
-		shell_exec('/usr/local/bin/pigs p 17 255');
-		shell_exec('/usr/local/bin/pigs p 22 0');
+		shell_exec('/usr/local/bin/pigs p 17 0');
+		shell_exec('/usr/local/bin/pigs p 22 204');
 		shell_exec('/usr/local/bin/pigs p 24 255');
 	}
 	if (isset($_POST['rose']))
