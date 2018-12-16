@@ -95,7 +95,24 @@
 		for( $i = 0 ; $i <= 255 ; $i++ )
 		{
 			shell_exec('/usr/local/bin/pigs p 17 ' . $i);
-			usleep(200);
+			usleep(500);
+		}
+	}
+	if (isset($_POST['creativity_x'], $_POST['creativity_y']))
+	{
+		for ( $j = 0 ; $j < 2 ; $j++){
+			for( $i = 0 ; $i <= 255 ; $i++ )
+		    {
+			    shell_exec('/usr/local/bin/pigs p 17 ' . $i);
+		        shell_exec('/usr/local/bin/pigs p 24 ' . (255 - $i));
+		        usleep(1000);
+		    }
+		    for( $i = 0 ; $i <= 255 ; $i++ )
+		    {
+		 	    shell_exec('/usr/local/bin/pigs p 17 ' . (255 - $i));
+		        shell_exec('/usr/local/bin/pigs p 24 ' . $i);
+		        usleep(1000);
+		    }
 		}
 	}
 ?>
