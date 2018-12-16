@@ -31,7 +31,7 @@
 	}
 	if (isset($_POST['yellow']))
 	{
-		shell_exec('/usr/local/bin/pigs p 17 102');
+		shell_exec('/usr/local/bin/pigs p 17 0');
 		shell_exec('/usr/local/bin/pigs p 22 255');
 		shell_exec('/usr/local/bin/pigs p 24 255');
 	}
