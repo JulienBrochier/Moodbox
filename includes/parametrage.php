@@ -77,7 +77,7 @@
 	if (isset($_POST['strobo']))
 	{
 		$strob = true;
-		for($i = 0 ; $i < 10 ; $i++)
+		while(true)
 		{
 			usleep(50);
 
