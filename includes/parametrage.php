@@ -36,11 +36,30 @@
                                 for($j = 1; $j <= 6; $j++)
                                     {
                                         $index = ($i-1)*6 + $j -1;
-                                        echo("<input type='button' value='$array_color[$index]' name='$array_color[$index]' class='element$i'>");  
+                                        echo("<button value='$array_color[$index]' name='$array_color[$index]' class='element$i'>");  
                                         //input type='button' value='Click Me!'    
                                     }
                             echo("</div>");
                             }
+
+			    if (isset($_POST['red']))
+			    {
+				 shell_exec('/usr/local/bin/pigs p 17 255');
+			    }
+			    if (isset($_POST['green']))
+			    {
+				 shell_exec('/usr/local/bin/pigs p 22 255');
+			    }
+			    if (isset($_POST['blue']))
+			    {
+				 shell_exec('/usr/local/bin/pigs p 24 255');
+			    }
+			    if (isset($_POST['black']))
+			    {
+				 shell_exec('/usr/local/bin/pigs p 17 0');
+				 shell_exec('/usr/local/bin/pigs p 22 0');
+				 shell_exec('/usr/local/bin/pigs p 24 0');
+			    }
                     ?>
                 
             </div>
