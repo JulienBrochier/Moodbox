@@ -76,11 +76,13 @@
 	{
 		for($i = 0 ; $i < 10 ; $i++)
 		{
+			usleep(50);
+
 			shell_exec('/usr/local/bin/pigs p 17 255');
 			shell_exec('/usr/local/bin/pigs p 22 255');
 			shell_exec('/usr/local/bin/pigs p 24 255');
 
-			sleep(1);
+			usleep(50);
 
 			shell_exec('/usr/local/bin/pigs p 17 0');
 			shell_exec('/usr/local/bin/pigs p 22 0');
