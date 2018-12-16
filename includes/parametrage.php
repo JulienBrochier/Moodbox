@@ -68,7 +68,7 @@
 	if (isset($_POST['ocean']))
 	{
 		shell_exec('/usr/local/bin/pigs p 17 0');
-		shell_exec('/usr/local/bin/pigs p 22 102');
+		shell_exec('/usr/local/bin/pigs p 22 204');
 		shell_exec('/usr/local/bin/pigs p 24 255');
 	}
 ?>
@@ -153,7 +153,7 @@
                         <p id ="pcligno">Stroboscope</p>
                     </div>
                     <div>
-                        <div id="multi"><button src = "image/rgb.png" name="strob" class = "imgMode " title ="Multicouleur" alt = "Multicouleur"></div>
+                        <div id="multi"><img src = "image/rgb.png" class = "imgMode " title ="Multicouleur" alt = "Multicouleur"></div>
                         <p id = "pmulti">Multi-couleur</p>
                     </div>
                 </div>
