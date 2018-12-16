@@ -89,6 +89,15 @@
 			shell_exec('/usr/local/bin/pigs p 24 0');
 		}
 	}
+
+	if (isset($_POST['changingColor']))
+	{
+		for( $i = 0 ; $i <= 255 ; $i++ )
+		{
+			shell_exec('usr/local/bin/pigs p 17 ' + $i);
+			usleep(200);
+		}
+	}
 ?>
 
 <html lang="fr">
@@ -167,7 +176,7 @@
                         <p id = "puni">Uni</p>
                     </div>
                     <div>
-                        <div id="cligno"><button name="strobo" src = "image/flash.png" class = "imgMode" title ="Clignotant" alt = "Clignotant"></div>
+                        <div id="cligno"><input type="button" name="strobo" src = "image/flash.png" class = "imgMode" title ="Clignotant" alt = "Clignotant"></div>
                         <p id ="pcligno">Stroboscope</p>
                     </div>
                     <div>
