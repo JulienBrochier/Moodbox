@@ -29,48 +29,6 @@
 		shell_exec('/usr/local/bin/pigs p 22 0');
 		shell_exec('/usr/local/bin/pigs p 24 0');
 	}
-	if (isset($_POST['yellow']))
-	{
-		shell_exec('/usr/local/bin/pigs p 17 102');
-		shell_exec('/usr/local/bin/pigs p 22 255');
-		shell_exec('/usr/local/bin/pigs p 24 255');
-	}
-	if (isset($_POST['cyan']))
-	{
-		shell_exec('/usr/local/bin/pigs p 17 0');
-		shell_exec('/usr/local/bin/pigs p 22 204');
-		shell_exec('/usr/local/bin/pigs p 24 255');
-	}
-	if (isset($_POST['rose']))
-	{
-		shell_exec('/usr/local/bin/pigs p 17 255');
-		shell_exec('/usr/local/bin/pigs p 22 0');
-		shell_exec('/usr/local/bin/pigs p 24 255');
-	}
-	if (isset($_POST['grey']))
-	{
-		shell_exec('/usr/local/bin/pigs p 17 128');
-		shell_exec('/usr/local/bin/pigs p 22 128');
-		shell_exec('/usr/local/bin/pigs p 24 128');
-	}
-	if (isset($_POST['dark_green']))
-	{
-		shell_exec('/usr/local/bin/pigs p 17 0');
-		shell_exec('/usr/local/bin/pigs p 22 102');
-		shell_exec('/usr/local/bin/pigs p 24 0');
-	}
-	if (isset($_POST['purple']))
-	{
-		shell_exec('/usr/local/bin/pigs p 17 128');
-		shell_exec('/usr/local/bin/pigs p 22 0');
-		shell_exec('/usr/local/bin/pigs p 24 128');
-	}
-	if (isset($_POST['ocean']))
-	{
-		shell_exec('/usr/local/bin/pigs p 17 0');
-		shell_exec('/usr/local/bin/pigs p 22 204');
-		shell_exec('/usr/local/bin/pigs p 24 255');
-	}
 ?>
 
 <html lang="fr">
