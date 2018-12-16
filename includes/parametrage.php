@@ -92,14 +92,6 @@
 
 	if (isset($_POST['creativity_x'], $_POST['creativity_y']))
 	{
-		for( $i = 0 ; $i <= 255 ; $i++ )
-		{
-			shell_exec('/usr/local/bin/pigs p 17 ' . $i);
-			usleep(500);
-		}
-	}
-	if (isset($_POST['creativity_x'], $_POST['creativity_y']))
-	{
 		for ( $j = 0 ; $j < 2 ; $j++){
 			for( $i = 0 ; $i <= 255 ; $i++ )
 		    {
