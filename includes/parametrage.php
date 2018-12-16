@@ -78,7 +78,7 @@
 	if (isset($_POST['strobo']))
 	{
 		$strob = true;
-		while(true)
+		while(strob == true)
 		{
 			usleep(50);
 
@@ -91,10 +91,6 @@
 			shell_exec('/usr/local/bin/pigs p 17 0');
 			shell_exec('/usr/local/bin/pigs p 22 0');
 			shell_exec('/usr/local/bin/pigs p 24 0');
-
-			if($strob == false){
-				break;
-			}
 		}
 	}
 ?>
