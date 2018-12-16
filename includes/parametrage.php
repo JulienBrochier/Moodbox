@@ -74,7 +74,7 @@
 
 	if (isset($_POST['strobo']))
 	{
-		while(true)
+		for($i = 0 ; $i < 10 ; $i++)
 		{
 			shell_exec('/usr/local/bin/pigs p 17 255');
 			shell_exec('/usr/local/bin/pigs p 22 255');
