@@ -1,3 +1,24 @@
+<?php
+if (isset($_POST['red']))
+			    {
+				 shell_exec('/usr/local/bin/pigs p 17 255');
+			    }
+			    if (isset($_POST['green']))
+			    {
+				 shell_exec('/usr/local/bin/pigs p 22 255');
+			    }
+			    if (isset($_POST['blue']))
+			    {
+				 shell_exec('/usr/local/bin/pigs p 24 255');
+			    }
+			    if (isset($_POST['black']))
+			    {
+				 shell_exec('/usr/local/bin/pigs p 17 0');
+				 shell_exec('/usr/local/bin/pigs p 22 0');
+				 shell_exec('/usr/local/bin/pigs p 24 0');
+			    }
+?>
+
 <html lang="fr">
 
     <head>
@@ -41,25 +62,6 @@
                                     }
                             echo("</div>");
                             }
-
-			    if (isset($_POST['red']))
-			    {
-				 shell_exec('/usr/local/bin/pigs p 17 255');
-			    }
-			    if (isset($_POST['green']))
-			    {
-				 shell_exec('/usr/local/bin/pigs p 22 255');
-			    }
-			    if (isset($_POST['blue']))
-			    {
-				 shell_exec('/usr/local/bin/pigs p 24 255');
-			    }
-			    if (isset($_POST['black']))
-			    {
-				 shell_exec('/usr/local/bin/pigs p 17 0');
-				 shell_exec('/usr/local/bin/pigs p 22 0');
-				 shell_exec('/usr/local/bin/pigs p 24 0');
-			    }
                     ?>
                 
             </div>
