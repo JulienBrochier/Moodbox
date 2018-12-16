@@ -90,7 +90,7 @@
 		}
 	}
 
-	if (isset($_POST['changingColor']))
+	if (isset($_POST['creativity_x'], $_POST['creativity_y']))
 	{
 		for( $i = 0 ; $i <= 255 ; $i++ )
 		{
