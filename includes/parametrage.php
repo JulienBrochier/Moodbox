@@ -176,7 +176,7 @@
                         <p id = "puni">Uni</p>
                     </div>
                     <div>
-                        <div id="cligno"><input type="button" name="strobo" src = "image/flash.png" class = "imgMode" title ="Clignotant" alt = "Clignotant"></div>
+                        <div id="cligno"><input type="image" name="strobo" src = "image/flash.png" class = "imgMode" title ="Clignotant" alt = "Clignotant"></div>
                         <p id ="pcligno">Stroboscope</p>
                     </div>
                     <div>
