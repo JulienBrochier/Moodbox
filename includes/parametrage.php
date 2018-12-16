@@ -27,6 +27,7 @@
 	}
 	if (isset($_POST['black']))
 	{
+		$strob = false;
 		shell_exec('/usr/local/bin/pigs p 17 0');
 		shell_exec('/usr/local/bin/pigs p 22 0');
 		shell_exec('/usr/local/bin/pigs p 24 0');
