@@ -72,7 +72,7 @@
 		shell_exec('/usr/local/bin/pigs p 24 255');
 	}
 
-	if (isset($_POST['strobo']))
+	if (isset($_POST['strobo_x'], $_POST['strobo_y']))
 	{
 		for( $i = 0 ; $i < 20 ; $i++ )
 		{
