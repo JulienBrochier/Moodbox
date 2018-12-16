@@ -41,7 +41,7 @@ if (isset($_POST['red']))
     </head>
 
     <body>
-    <form action="parametrage.php" method="get">
+    <form action="parametrage.php" method="post">
         <div id = "page">
         <div id = "partie_gauche">
         <div id ="telecommande">
