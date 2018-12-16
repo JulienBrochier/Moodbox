@@ -94,7 +94,7 @@
 	{
 		for( $i = 0 ; $i <= 255 ; $i++ )
 		{
-			shell_exec('usr/local/bin/pigs p 17 255');
+			shell_exec('/usr/local/bin/pigs p 17 ' . $i);
 			usleep(200);
 		}
 	}
