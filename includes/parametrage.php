@@ -71,6 +71,22 @@
 		shell_exec('/usr/local/bin/pigs p 22 204');
 		shell_exec('/usr/local/bin/pigs p 24 255');
 	}
+
+	if (isset($_POST['strobo']))
+	{
+		while(true)
+		{
+			shell_exec('/usr/local/bin/pigs p 17 255');
+			shell_exec('/usr/local/bin/pigs p 22 255');
+			shell_exec('/usr/local/bin/pigs p 24 255');
+
+			sleep(1);
+
+			shell_exec('/usr/local/bin/pigs p 17 255');
+			shell_exec('/usr/local/bin/pigs p 22 255');
+			shell_exec('/usr/local/bin/pigs p 24 255');
+		}
+	}
 ?>
 
 <html lang="fr">
