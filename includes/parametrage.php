@@ -1,6 +1,4 @@
 <?php
-	$strob = false;
-
 	if (isset($_POST['white']))
 	{
 		shell_exec('/usr/local/bin/pigs p 17 255');
@@ -27,7 +25,6 @@
 	}
 	if (isset($_POST['black']))
 	{
-		$strob = false;
 		shell_exec('/usr/local/bin/pigs p 17 0');
 		shell_exec('/usr/local/bin/pigs p 22 0');
 		shell_exec('/usr/local/bin/pigs p 24 0');
@@ -77,8 +74,7 @@
 
 	if (isset($_POST['strobo']))
 	{
-		$strob = true;
-		while(strob == true)
+		for( $i = 0 ; $i < 20 ; $i++ )
 		{
 			usleep(50);
 
